@@ -1,17 +1,14 @@
 [
   {
     "name": "Bears Deluxe",
-    "information": "Web 3 gaming project.",
-    // "needed_funding": 5000
+    "information": "Web 3 gaming project."
   },
   {
     "name": "FSD",
-    "description": "FUll self driving application built by Tesla with the hopes of creating the first level five autonooous vehicle.",
-    // "needed_funding": 10000
+    "information": "FUll self driving application built by Tesla with the hopes of creating the first level five autonooous vehicle."
   },
   {
     "name": "Bitcoin",
-    "description": "A decentralized asset on the blockchain.",
-    // "needed_funding": 800
+    "information": "A decentralized asset on the blockchain."
   }
 ]
