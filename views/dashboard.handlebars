@@ -1,0 +1,26 @@
+{{#each userBlogs as |userBlog| }}
+{{>dashCard}}
+{{/each}}
+
+<h2>New Blog</h2>
+    <form id="'new-blog">
+        <div class="row mb-4 blog">
+        <div class="col-md-5">
+        <label for="blog-title">Title:</label>
+        <br>
+        <input type='text' id='blog-title'>
+        <br>
+        </div>
+        <div class="col-md-7">
+            <label for="'blog-text">Text:</label>
+            <br>
+            <textarea name="'blog-text" id="'blog-text"></textarea>
+            <br>
+        </div>
+        <div>
+            <button type="'submit">Submit</button>
+        </div>
+   </form>
+
+<script src'../js/blog.js'></script>
+
