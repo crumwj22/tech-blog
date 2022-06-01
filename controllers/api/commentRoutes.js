@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   // find one comment by its `id` value
-  // be sure to include its associated Products
+  // be sure to include its associated comments
   try {
     const commentData = await Comment.findByPk(req.params.id, {
       include: [{ model: Comment }],
@@ -46,7 +46,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  // update a category by its `id` value
+  // update a comment by its `id` value
   try {
     const commentData = await Comment.update(req.body, {
       where: {
