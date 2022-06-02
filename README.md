@@ -51,4 +51,4 @@ You can view more of my projects at <https://github.com/crumwj22>.
 
 ## Link to Tech Blog app
 
-<a href="https://git.heroku.com/tech-blog-jessec.git">Link to Tech Blog</a>
+<a href="https://tech-blog-jessec.herokuapp.com">Link to Tech Blog</a>
