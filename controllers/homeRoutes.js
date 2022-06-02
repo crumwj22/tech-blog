@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
         {
           attributes: ['id', 'name', 'created'],
           model: User,
-          attributes: ['username'],
+          attributes: ['name'],
         },
       ],
     });
