@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     const homepageData = await Blog.findAll({
       include: [
         {
-          attributes: ['id', 'title', 'created'],
+          attributes: ['id', 'name', 'created'],
           model: User,
           attributes: ['username'],
         },
@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
 router.get('/blog/:id', async (req, res) => {
   try {
     const blogDataDb = await Blog.findByPk(req.params.id, {
-      attributes: ['id', 'title', 'content', 'created'],
+      attributes: ['id', 'name', 'information', 'date_created'],
       include: [
         {
           model: User,
@@ -40,7 +40,7 @@ router.get('/blog/:id', async (req, res) => {
     });
 
     const commentDataDb = await Comment.findAll(req.params.id, {
-      attributes: ['id', 'content', 'created'],
+      attributes: ['id', 'information', 'date_created'],
       include: {
         model: User,
         attributes: ['username'],
