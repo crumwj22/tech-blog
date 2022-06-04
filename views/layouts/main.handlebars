@@ -16,7 +16,7 @@
          <a href="/">Tech Blog</a>
       </h1>
       
-    </header>
+    
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
@@ -26,8 +26,8 @@
         <a href="/login">login</a>
         {{/if}}
       </nav>
+  </header>
 
-    
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
