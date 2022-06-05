@@ -73,6 +73,7 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
 // Use withAuth middleware to prevent access to route
 // router.get('/profile', withAuth, async (req, res) => {
 //   try {
