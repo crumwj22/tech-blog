@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 
     const userblogs = dashboardDb.map((blog) => blog.get({ plain: true }));
 
-    res.render('dashboard', {
+    res.render('profile', {
       userblogs,
       logged_in: req.session.logged_in,
     });
@@ -42,7 +42,7 @@ router.get('/', async (req, res) => {
 // });
 
 // post a blog to the dashboard
-router.post('/', async (req, res) => {
+router.post('/profile', async (req, res) => {
   try {
     const newBlog = await Blog.create({
       ...req.body,
